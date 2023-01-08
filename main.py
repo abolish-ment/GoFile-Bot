@@ -21,7 +21,7 @@ Bot = Client(
 @Bot.on_message(filters.private & filters.command("start"))
 async def start(bot, update):
     await update.reply_text(
-        text=f"Hello {update.from_user.mention}, Please send a media to get direct url.",
+        text=f"Hello {update.from_user.mention}, Please send a media to get direct url./nBot By @GypsyALT",
         disable_web_page_preview=True,
         quote=True
     )
