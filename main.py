@@ -21,7 +21,7 @@ Bot = Client(
 @Bot.on_message(filters.private & filters.command("start"))
 async def start(bot, update):
     await update.reply_text(
-        text=f"Hello {update.from_user.mention}, Please send a media to get direct url./nBot By @GypsyALT",
+        text=f"Hello {update.from_user.mention}, Please send a media to get direct url.",
         disable_web_page_preview=True,
         quote=True
     )
@@ -67,7 +67,7 @@ async def media_filter(bot, update):
                 InlineKeyboardButton(text="Share Link", url=f"https://telegram.me/share/url?url={response['directLink']}")
             ],
             [
-                InlineKeyboardButton(text="💫Deploy Video💫", url="https://youtu.be/Zisu87a_6J8")
+                InlineKeyboardButton(text="Contact Admin", url="https://t.me/GypsyALT")
             ]
         ]
     )
